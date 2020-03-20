@@ -1,6 +1,0 @@
-framework module Pods_SimpleBillMgrUITests {
-  umbrella header "Pods-SimpleBillMgrUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
