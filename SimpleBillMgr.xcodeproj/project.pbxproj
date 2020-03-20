@@ -3,18 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		500672EA241CA90C00379516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500672E9241CA90C00379516 /* AppDelegate.swift */; };
 		500672EC241CA90C00379516 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500672EB241CA90C00379516 /* SceneDelegate.swift */; };
 		500672EE241CA90C00379516 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500672ED241CA90C00379516 /* ViewController.swift */; };
-		500672F1241CA90C00379516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500672EF241CA90C00379516 /* Main.storyboard */; };
 		500672F3241CA91300379516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500672F2241CA91300379516 /* Assets.xcassets */; };
 		500672F6241CA91300379516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500672F4241CA91300379516 /* LaunchScreen.storyboard */; };
 		50067301241CA91400379516 /* SimpleBillMgrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067300241CA91400379516 /* SimpleBillMgrTests.swift */; };
 		5006730C241CA91400379516 /* SimpleBillMgrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006730B241CA91400379516 /* SimpleBillMgrUITests.swift */; };
+		50067350241CAB7200379516 /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006731B241CAB6F00379516 /* ColorTool.swift */; };
+		50067351241CAB7200379516 /* TimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006731C241CAB6F00379516 /* TimeTool.swift */; };
+		50067352241CAB7200379516 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006731D241CAB6F00379516 /* Theme.swift */; };
+		50067353241CAB7200379516 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5006731E241CAB7000379516 /* Intents.intentdefinition */; };
+		50067354241CAB7200379516 /* CostBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067320241CAB7000379516 /* CostBook.swift */; };
+		50067355241CAB7200379516 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067321241CAB7000379516 /* Currency.swift */; };
+		50067356241CAB7200379516 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067322241CAB7000379516 /* Config.swift */; };
+		50067357241CAB7200379516 /* Bills+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067323241CAB7000379516 /* Bills+CoreDataClass.swift */; };
+		50067358241CAB7200379516 /* Bills+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067324241CAB7000379516 /* Bills+CoreDataProperties.swift */; };
+		50067359241CAB7200379516 /* CostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067325241CAB7000379516 /* CostType.swift */; };
+		5006735A241CAB7200379516 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067326241CAB7000379516 /* Cost.swift */; };
+		5006735B241CAB7200379516 /* AddCostTypeStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067329241CAB7100379516 /* AddCostTypeStage.swift */; };
+		5006735C241CAB7200379516 /* OpenSourceStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732A241CAB7100379516 /* OpenSourceStage.swift */; };
+		5006735D241CAB7200379516 /* ThemeStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732B241CAB7100379516 /* ThemeStage.swift */; };
+		5006735E241CAB7200379516 /* CostTypeStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732C241CAB7100379516 /* CostTypeStage.swift */; };
+		5006735F241CAB7200379516 /* AboutStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732D241CAB7100379516 /* AboutStage.swift */; };
+		50067360241CAB7200379516 /* UserGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732E241CAB7100379516 /* UserGuideViewController.swift */; };
+		50067361241CAB7200379516 /* HomeStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006732F241CAB7100379516 /* HomeStage.swift */; };
+		50067362241CAB7200379516 /* SelectCostTypeStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067330241CAB7100379516 /* SelectCostTypeStage.swift */; };
+		50067363241CAB7200379516 /* AddCostStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067331241CAB7100379516 /* AddCostStage.swift */; };
+		50067364241CAB7200379516 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067332241CAB7100379516 /* HomePage.swift */; };
+		50067365241CAB7200379516 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067333241CAB7100379516 /* TestViewController.swift */; };
+		50067366241CAB7200379516 /* TabbarStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067334241CAB7100379516 /* TabbarStage.swift */; };
+		50067367241CAB7200379516 /* ChartStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067335241CAB7100379516 /* ChartStage.swift */; };
+		50067368241CAB7200379516 /* SelectCurrencyStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067336241CAB7100379516 /* SelectCurrencyStage.swift */; };
+		50067369241CAB7200379516 /* AddBillNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067337241CAB7100379516 /* AddBillNavigationViewController.swift */; };
+		5006736A241CAB7200379516 /* SettingsStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067338241CAB7100379516 /* SettingsStage.swift */; };
+		5006736B241CAB7200379516 /* Lock.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006733A241CAB7200379516 /* Lock.xib */; };
+		5006736C241CAB7200379516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006733B241CAB7200379516 /* Main.storyboard */; };
+		5006736E241CAB7200379516 /* CostAdvanced.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006733F241CAB7200379516 /* CostAdvanced.storyboard */; };
+		50067370241CAB7200379516 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50067342241CAB7200379516 /* SettingCell.xib */; };
+		50067371241CAB7200379516 /* CurrencyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50067343241CAB7200379516 /* CurrencyListCell.xib */; };
+		50067372241CAB7200379516 /* CustomCostTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50067344241CAB7200379516 /* CustomCostTypeCell.xib */; };
+		50067373241CAB7200379516 /* CostTypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067345241CAB7200379516 /* CostTypeCollectionCell.swift */; };
+		50067374241CAB7200379516 /* CustomCostTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067346241CAB7200379516 /* CustomCostTypeCell.swift */; };
+		50067375241CAB7200379516 /* HomeBillListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50067347241CAB7200379516 /* HomeBillListCell.xib */; };
+		50067376241CAB7200379516 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50067348241CAB7200379516 /* BudgetCell.xib */; };
+		50067377241CAB7200379516 /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067349241CAB7200379516 /* BillCell.swift */; };
+		50067378241CAB7200379516 /* NumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006734A241CAB7200379516 /* NumberKeyboard.swift */; };
+		50067379241CAB7200379516 /* CostTypeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006734B241CAB7200379516 /* CostTypeCollectionCell.xib */; };
+		5006737A241CAB7200379516 /* NumberKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006734C241CAB7200379516 /* NumberKeyboard.xib */; };
+		5006737B241CAB7200379516 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006734D241CAB7200379516 /* BudgetCell.swift */; };
+		5006737C241CAB7200379516 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006734E241CAB7200379516 /* CurrencyCell.swift */; };
+		5006737D241CAB7200379516 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006734F241CAB7200379516 /* SettingTableViewCell.swift */; };
+		50067381241CABBB00379516 /* DBInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50067380241CABBB00379516 /* DBInit.swift */; };
+		50067383241CAD3C00379516 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50067382241CAD3C00379516 /* Settings.storyboard */; };
+		50EE63E92424A3E6004BC9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE63E82424A3E6004BC9DB /* AppDelegate.swift */; };
+		5D72E884EE76E4E028C9B702 /* Pods_SimpleBillMgrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51E620AF5CFA290AADC419A /* Pods_SimpleBillMgrTests.framework */; };
+		BC9610C4E02F75A7FF9B998C /* Pods_SimpleBillMgrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA3560EF076F659A26118E9 /* Pods_SimpleBillMgrUITests.framework */; };
+		C12981F04E938F9264C7CDC6 /* Pods_SimpleBillMgr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF0DCD8A149776A16729193 /* Pods_SimpleBillMgr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +83,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		500672E6241CA90C00379516 /* SimpleBillMgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBillMgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		500672E9241CA90C00379516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D755F3C5FD58CA560D6F993 /* Pods-SimpleBillMgr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgr.release.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgr/Pods-SimpleBillMgr.release.xcconfig"; sourceTree = "<group>"; };
+		1EF0DCD8A149776A16729193 /* Pods_SimpleBillMgr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBillMgr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A424720387A900C5D31AEC8 /* Pods-SimpleBillMgr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgr.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgr/Pods-SimpleBillMgr.debug.xcconfig"; sourceTree = "<group>"; };
+		3861D2B095AC74AA68D88AC2 /* Pods-SimpleBillMgrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgrUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgrUITests/Pods-SimpleBillMgrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		500672E6241CA90C00379516 /* 橙子账本.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "橙子账本.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		500672EB241CA90C00379516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		500672ED241CA90C00379516 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		500672F0241CA90C00379516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		500672F2241CA91300379516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		500672F5241CA91300379516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		500672F7241CA91300379516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +99,59 @@
 		50067307241CA91400379516 /* SimpleBillMgrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBillMgrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5006730B241CA91400379516 /* SimpleBillMgrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBillMgrUITests.swift; sourceTree = "<group>"; };
 		5006730D241CA91400379516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5006731B241CAB6F00379516 /* ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
+		5006731C241CAB6F00379516 /* TimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTool.swift; sourceTree = "<group>"; };
+		5006731D241CAB6F00379516 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5006731E241CAB7000379516 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		50067320241CAB7000379516 /* CostBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostBook.swift; sourceTree = "<group>"; };
+		50067321241CAB7000379516 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		50067322241CAB7000379516 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		50067323241CAB7000379516 /* Bills+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bills+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50067324241CAB7000379516 /* Bills+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bills+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50067325241CAB7000379516 /* CostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostType.swift; sourceTree = "<group>"; };
+		50067326241CAB7000379516 /* Cost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
+		50067329241CAB7100379516 /* AddCostTypeStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCostTypeStage.swift; sourceTree = "<group>"; };
+		5006732A241CAB7100379516 /* OpenSourceStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSourceStage.swift; sourceTree = "<group>"; };
+		5006732B241CAB7100379516 /* ThemeStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeStage.swift; sourceTree = "<group>"; };
+		5006732C241CAB7100379516 /* CostTypeStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostTypeStage.swift; sourceTree = "<group>"; };
+		5006732D241CAB7100379516 /* AboutStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutStage.swift; sourceTree = "<group>"; };
+		5006732E241CAB7100379516 /* UserGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuideViewController.swift; sourceTree = "<group>"; };
+		5006732F241CAB7100379516 /* HomeStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStage.swift; sourceTree = "<group>"; };
+		50067330241CAB7100379516 /* SelectCostTypeStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCostTypeStage.swift; sourceTree = "<group>"; };
+		50067331241CAB7100379516 /* AddCostStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCostStage.swift; sourceTree = "<group>"; };
+		50067332241CAB7100379516 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		50067333241CAB7100379516 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		50067334241CAB7100379516 /* TabbarStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarStage.swift; sourceTree = "<group>"; };
+		50067335241CAB7100379516 /* ChartStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartStage.swift; sourceTree = "<group>"; };
+		50067336241CAB7100379516 /* SelectCurrencyStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCurrencyStage.swift; sourceTree = "<group>"; };
+		50067337241CAB7100379516 /* AddBillNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBillNavigationViewController.swift; sourceTree = "<group>"; };
+		50067338241CAB7100379516 /* SettingsStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStage.swift; sourceTree = "<group>"; };
+		5006733A241CAB7200379516 /* Lock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lock.xib; sourceTree = "<group>"; };
+		5006733C241CAB7200379516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5006733F241CAB7200379516 /* CostAdvanced.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CostAdvanced.storyboard; sourceTree = "<group>"; };
+		50067342241CAB7200379516 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		50067343241CAB7200379516 /* CurrencyListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyListCell.xib; sourceTree = "<group>"; };
+		50067344241CAB7200379516 /* CustomCostTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCostTypeCell.xib; sourceTree = "<group>"; };
+		50067345241CAB7200379516 /* CostTypeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostTypeCollectionCell.swift; sourceTree = "<group>"; };
+		50067346241CAB7200379516 /* CustomCostTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCostTypeCell.swift; sourceTree = "<group>"; };
+		50067347241CAB7200379516 /* HomeBillListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeBillListCell.xib; sourceTree = "<group>"; };
+		50067348241CAB7200379516 /* BudgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		50067349241CAB7200379516 /* BillCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
+		5006734A241CAB7200379516 /* NumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberKeyboard.swift; sourceTree = "<group>"; };
+		5006734B241CAB7200379516 /* CostTypeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostTypeCollectionCell.xib; sourceTree = "<group>"; };
+		5006734C241CAB7200379516 /* NumberKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberKeyboard.xib; sourceTree = "<group>"; };
+		5006734D241CAB7200379516 /* BudgetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
+		5006734E241CAB7200379516 /* CurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		5006734F241CAB7200379516 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		50067380241CABBB00379516 /* DBInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBInit.swift; sourceTree = "<group>"; };
+		50067382241CAD3C00379516 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		50067384241CAEFF00379516 /* 橙子账本.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "橙子账本.entitlements"; sourceTree = "<group>"; };
+		50EE63E82424A3E6004BC9DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76EA46A3E6F7F83220D30D51 /* Pods-SimpleBillMgrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgrTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgrTests/Pods-SimpleBillMgrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B1B324CD9096D7C371E50C /* Pods-SimpleBillMgrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgrTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgrTests/Pods-SimpleBillMgrTests.release.xcconfig"; sourceTree = "<group>"; };
+		C51E620AF5CFA290AADC419A /* Pods_SimpleBillMgrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBillMgrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E6D68B614022DD97F47A04 /* Pods-SimpleBillMgrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBillMgrUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBillMgrUITests/Pods-SimpleBillMgrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCA3560EF076F659A26118E9 /* Pods_SimpleBillMgrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBillMgrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12981F04E938F9264C7CDC6 /* Pods_SimpleBillMgr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D72E884EE76E4E028C9B702 /* Pods_SimpleBillMgrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9610C4E02F75A7FF9B998C /* Pods_SimpleBillMgrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +189,15 @@
 				500672FF241CA91400379516 /* SimpleBillMgrTests */,
 				5006730A241CA91400379516 /* SimpleBillMgrUITests */,
 				500672E7241CA90C00379516 /* Products */,
+				FD002C58292996E2342DB23F /* Pods */,
+				E92B986CA38836FDBB880626 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		500672E7241CA90C00379516 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				500672E6241CA90C00379516 /* SimpleBillMgr.app */,
+				500672E6241CA90C00379516 /* 橙子账本.app */,
 				500672FC241CA91400379516 /* SimpleBillMgrTests.xctest */,
 				50067307241CA91400379516 /* SimpleBillMgrUITests.xctest */,
 			);
@@ -99,10 +207,16 @@
 		500672E8241CA90C00379516 /* SimpleBillMgr */ = {
 			isa = PBXGroup;
 			children = (
-				500672E9241CA90C00379516 /* AppDelegate.swift */,
+				50067384241CAEFF00379516 /* 橙子账本.entitlements */,
+				50EE63E82424A3E6004BC9DB /* AppDelegate.swift */,
+				50067380241CABBB00379516 /* DBInit.swift */,
+				50067327241CAB7100379516 /* Controller */,
+				5006731E241CAB7000379516 /* Intents.intentdefinition */,
+				5006731F241CAB7000379516 /* Model */,
+				5006731A241CAB6F00379516 /* Tools */,
+				50067339241CAB7200379516 /* View */,
 				500672EB241CA90C00379516 /* SceneDelegate.swift */,
 				500672ED241CA90C00379516 /* ViewController.swift */,
-				500672EF241CA90C00379516 /* Main.storyboard */,
 				500672F2241CA91300379516 /* Assets.xcassets */,
 				500672F4241CA91300379516 /* LaunchScreen.storyboard */,
 				500672F7241CA91300379516 /* Info.plist */,
@@ -128,6 +242,117 @@
 			path = SimpleBillMgrUITests;
 			sourceTree = "<group>";
 		};
+		5006731A241CAB6F00379516 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5006731B241CAB6F00379516 /* ColorTool.swift */,
+				5006731C241CAB6F00379516 /* TimeTool.swift */,
+				5006731D241CAB6F00379516 /* Theme.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5006731F241CAB7000379516 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50067320241CAB7000379516 /* CostBook.swift */,
+				50067321241CAB7000379516 /* Currency.swift */,
+				50067322241CAB7000379516 /* Config.swift */,
+				50067323241CAB7000379516 /* Bills+CoreDataClass.swift */,
+				50067324241CAB7000379516 /* Bills+CoreDataProperties.swift */,
+				50067325241CAB7000379516 /* CostType.swift */,
+				50067326241CAB7000379516 /* Cost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50067327241CAB7100379516 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50067328241CAB7100379516 /* Settings */,
+				5006732E241CAB7100379516 /* UserGuideViewController.swift */,
+				5006732F241CAB7100379516 /* HomeStage.swift */,
+				50067330241CAB7100379516 /* SelectCostTypeStage.swift */,
+				50067331241CAB7100379516 /* AddCostStage.swift */,
+				50067332241CAB7100379516 /* HomePage.swift */,
+				50067333241CAB7100379516 /* TestViewController.swift */,
+				50067334241CAB7100379516 /* TabbarStage.swift */,
+				50067335241CAB7100379516 /* ChartStage.swift */,
+				50067336241CAB7100379516 /* SelectCurrencyStage.swift */,
+				50067337241CAB7100379516 /* AddBillNavigationViewController.swift */,
+				50067338241CAB7100379516 /* SettingsStage.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50067328241CAB7100379516 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				50067329241CAB7100379516 /* AddCostTypeStage.swift */,
+				5006732A241CAB7100379516 /* OpenSourceStage.swift */,
+				5006732B241CAB7100379516 /* ThemeStage.swift */,
+				5006732C241CAB7100379516 /* CostTypeStage.swift */,
+				5006732D241CAB7100379516 /* AboutStage.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		50067339241CAB7200379516 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50067382241CAD3C00379516 /* Settings.storyboard */,
+				5006733A241CAB7200379516 /* Lock.xib */,
+				5006733B241CAB7200379516 /* Main.storyboard */,
+				5006733F241CAB7200379516 /* CostAdvanced.storyboard */,
+				50067341241CAB7200379516 /* Custom Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50067341241CAB7200379516 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				50067342241CAB7200379516 /* SettingCell.xib */,
+				50067343241CAB7200379516 /* CurrencyListCell.xib */,
+				50067344241CAB7200379516 /* CustomCostTypeCell.xib */,
+				50067345241CAB7200379516 /* CostTypeCollectionCell.swift */,
+				50067346241CAB7200379516 /* CustomCostTypeCell.swift */,
+				50067347241CAB7200379516 /* HomeBillListCell.xib */,
+				50067348241CAB7200379516 /* BudgetCell.xib */,
+				50067349241CAB7200379516 /* BillCell.swift */,
+				5006734A241CAB7200379516 /* NumberKeyboard.swift */,
+				5006734B241CAB7200379516 /* CostTypeCollectionCell.xib */,
+				5006734C241CAB7200379516 /* NumberKeyboard.xib */,
+				5006734D241CAB7200379516 /* BudgetCell.swift */,
+				5006734E241CAB7200379516 /* CurrencyCell.swift */,
+				5006734F241CAB7200379516 /* SettingTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E92B986CA38836FDBB880626 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EF0DCD8A149776A16729193 /* Pods_SimpleBillMgr.framework */,
+				C51E620AF5CFA290AADC419A /* Pods_SimpleBillMgrTests.framework */,
+				FCA3560EF076F659A26118E9 /* Pods_SimpleBillMgrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD002C58292996E2342DB23F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A424720387A900C5D31AEC8 /* Pods-SimpleBillMgr.debug.xcconfig */,
+				0D755F3C5FD58CA560D6F993 /* Pods-SimpleBillMgr.release.xcconfig */,
+				76EA46A3E6F7F83220D30D51 /* Pods-SimpleBillMgrTests.debug.xcconfig */,
+				91B1B324CD9096D7C371E50C /* Pods-SimpleBillMgrTests.release.xcconfig */,
+				E4E6D68B614022DD97F47A04 /* Pods-SimpleBillMgrUITests.debug.xcconfig */,
+				3861D2B095AC74AA68D88AC2 /* Pods-SimpleBillMgrUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +360,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50067310241CA91400379516 /* Build configuration list for PBXNativeTarget "SimpleBillMgr" */;
 			buildPhases = (
+				54A192E1786B8C99F585495A /* [CP] Check Pods Manifest.lock */,
 				500672E2241CA90C00379516 /* Sources */,
 				500672E3241CA90C00379516 /* Frameworks */,
 				500672E4241CA90C00379516 /* Resources */,
+				70E9F3FB6ED5E4DCE24B199C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +372,14 @@
 			);
 			name = SimpleBillMgr;
 			productName = SimpleBillMgr;
-			productReference = 500672E6241CA90C00379516 /* SimpleBillMgr.app */;
+			productReference = 500672E6241CA90C00379516 /* 橙子账本.app */;
 			productType = "com.apple.product-type.application";
 		};
 		500672FB241CA91400379516 /* SimpleBillMgrTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50067313241CA91400379516 /* Build configuration list for PBXNativeTarget "SimpleBillMgrTests" */;
 			buildPhases = (
+				BC5205E7DA455B41DE35D596 /* [CP] Check Pods Manifest.lock */,
 				500672F8241CA91400379516 /* Sources */,
 				500672F9241CA91400379516 /* Frameworks */,
 				500672FA241CA91400379516 /* Resources */,
@@ -170,6 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50067316241CA91400379516 /* Build configuration list for PBXNativeTarget "SimpleBillMgrUITests" */;
 			buildPhases = (
+				284887371C1B7052E388C789 /* [CP] Check Pods Manifest.lock */,
 				50067303241CA91400379516 /* Sources */,
 				50067304241CA91400379516 /* Frameworks */,
 				50067305241CA91400379516 /* Resources */,
@@ -232,9 +461,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50067379241CAB7200379516 /* CostTypeCollectionCell.xib in Resources */,
+				5006736E241CAB7200379516 /* CostAdvanced.storyboard in Resources */,
 				500672F6241CA91300379516 /* LaunchScreen.storyboard in Resources */,
+				5006737A241CAB7200379516 /* NumberKeyboard.xib in Resources */,
+				5006736C241CAB7200379516 /* Main.storyboard in Resources */,
+				50067372241CAB7200379516 /* CustomCostTypeCell.xib in Resources */,
+				50067376241CAB7200379516 /* BudgetCell.xib in Resources */,
+				50067370241CAB7200379516 /* SettingCell.xib in Resources */,
 				500672F3241CA91300379516 /* Assets.xcassets in Resources */,
-				500672F1241CA90C00379516 /* Main.storyboard in Resources */,
+				5006736B241CAB7200379516 /* Lock.xib in Resources */,
+				50067375241CAB7200379516 /* HomeBillListCell.xib in Resources */,
+				50067383241CAD3C00379516 /* Settings.storyboard in Resources */,
+				50067371241CAB7200379516 /* CurrencyListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +493,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		284887371C1B7052E388C789 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBillMgrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54A192E1786B8C99F585495A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBillMgr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E9F3FB6ED5E4DCE24B199C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBillMgr/Pods-SimpleBillMgr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBillMgr/Pods-SimpleBillMgr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleBillMgr/Pods-SimpleBillMgr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5205E7DA455B41DE35D596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBillMgrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		500672E2241CA90C00379516 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50067361241CAB7200379516 /* HomeStage.swift in Sources */,
+				50067363241CAB7200379516 /* AddCostStage.swift in Sources */,
+				50067355241CAB7200379516 /* Currency.swift in Sources */,
+				5006735E241CAB7200379516 /* CostTypeStage.swift in Sources */,
+				50067353241CAB7200379516 /* Intents.intentdefinition in Sources */,
+				5006735D241CAB7200379516 /* ThemeStage.swift in Sources */,
+				50067360241CAB7200379516 /* UserGuideViewController.swift in Sources */,
+				50067368241CAB7200379516 /* SelectCurrencyStage.swift in Sources */,
+				50067364241CAB7200379516 /* HomePage.swift in Sources */,
+				50067374241CAB7200379516 /* CustomCostTypeCell.swift in Sources */,
+				5006735B241CAB7200379516 /* AddCostTypeStage.swift in Sources */,
+				5006735F241CAB7200379516 /* AboutStage.swift in Sources */,
+				50067365241CAB7200379516 /* TestViewController.swift in Sources */,
 				500672EE241CA90C00379516 /* ViewController.swift in Sources */,
-				500672EA241CA90C00379516 /* AppDelegate.swift in Sources */,
+				50067367241CAB7200379516 /* ChartStage.swift in Sources */,
+				50067378241CAB7200379516 /* NumberKeyboard.swift in Sources */,
+				50067377241CAB7200379516 /* BillCell.swift in Sources */,
 				500672EC241CA90C00379516 /* SceneDelegate.swift in Sources */,
+				50067373241CAB7200379516 /* CostTypeCollectionCell.swift in Sources */,
+				50067359241CAB7200379516 /* CostType.swift in Sources */,
+				50EE63E92424A3E6004BC9DB /* AppDelegate.swift in Sources */,
+				5006735C241CAB7200379516 /* OpenSourceStage.swift in Sources */,
+				5006735A241CAB7200379516 /* Cost.swift in Sources */,
+				50067352241CAB7200379516 /* Theme.swift in Sources */,
+				5006737C241CAB7200379516 /* CurrencyCell.swift in Sources */,
+				50067381241CABBB00379516 /* DBInit.swift in Sources */,
+				50067366241CAB7200379516 /* TabbarStage.swift in Sources */,
+				5006737B241CAB7200379516 /* BudgetCell.swift in Sources */,
+				5006736A241CAB7200379516 /* SettingsStage.swift in Sources */,
+				50067358241CAB7200379516 /* Bills+CoreDataProperties.swift in Sources */,
+				50067354241CAB7200379516 /* CostBook.swift in Sources */,
+				50067356241CAB7200379516 /* Config.swift in Sources */,
+				50067351241CAB7200379516 /* TimeTool.swift in Sources */,
+				50067362241CAB7200379516 /* SelectCostTypeStage.swift in Sources */,
+				50067350241CAB7200379516 /* ColorTool.swift in Sources */,
+				50067369241CAB7200379516 /* AddBillNavigationViewController.swift in Sources */,
+				5006737D241CAB7200379516 /* SettingTableViewCell.swift in Sources */,
+				50067357241CAB7200379516 /* Bills+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,20 +657,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		500672EF241CA90C00379516 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				500672F0241CA90C00379516 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		500672F4241CA91300379516 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				500672F5241CA91300379516 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5006733B241CAB7200379516 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5006733C241CAB7200379516 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,17 +792,22 @@
 		};
 		50067311241CA91400379516 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A424720387A900C5D31AEC8 /* Pods-SimpleBillMgr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SimpleBillMgr/橙子账本.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 16;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 6P3X4YM85T;
 				INFOPLIST_FILE = SimpleBillMgr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.qpomelo.SimpleBillMgr;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.qpomelo.BillMagr;
+				PRODUCT_NAME = "橙子账本";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,17 +815,22 @@
 		};
 		50067312241CA91400379516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D755F3C5FD58CA560D6F993 /* Pods-SimpleBillMgr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SimpleBillMgr/橙子账本.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 16;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 6P3X4YM85T;
 				INFOPLIST_FILE = SimpleBillMgr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.qpomelo.SimpleBillMgr;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.qpomelo.BillMagr;
+				PRODUCT_NAME = "橙子账本";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +838,7 @@
 		};
 		50067314241CA91400379516 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EA46A3E6F7F83220D30D51 /* Pods-SimpleBillMgrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +861,7 @@
 		};
 		50067315241CA91400379516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B1B324CD9096D7C371E50C /* Pods-SimpleBillMgrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +884,7 @@
 		};
 		50067317241CA91400379516 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E6D68B614022DD97F47A04 /* Pods-SimpleBillMgrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +905,7 @@
 		};
 		50067318241CA91400379516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3861D2B095AC74AA68D88AC2 /* Pods-SimpleBillMgrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

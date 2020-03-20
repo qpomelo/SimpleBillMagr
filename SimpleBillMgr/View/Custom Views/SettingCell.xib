@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="05t-7s-TmY" customClass="SettingTableViewCell" customModule="SimpleBillMgr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="05t-7s-TmY" id="AYm-Wk-iUg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_icon_type_manage" translatesAutoresizingMaskIntoConstraints="NO" id="pdE-98-Uwy">
+                        <rect key="frame" x="30" y="13" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="adg-Hm-WVV"/>
+                            <constraint firstAttribute="width" constant="24" id="cFC-Po-QjV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开支类别管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glG-hM-7tV">
+                        <rect key="frame" x="70" y="14.5" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellRight" translatesAutoresizingMaskIntoConstraints="NO" id="ac0-s1-iNE">
+                        <rect key="frame" x="351" y="17" width="8" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="723-mm-rSN"/>
+                            <constraint firstAttribute="height" constant="16" id="hnj-tb-3xg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="glG-hM-7tV" firstAttribute="centerY" secondItem="AYm-Wk-iUg" secondAttribute="centerY" id="2Gb-9d-wVq"/>
+                    <constraint firstItem="pdE-98-Uwy" firstAttribute="leading" secondItem="AYm-Wk-iUg" secondAttribute="leading" constant="30" id="ImG-1R-Yua"/>
+                    <constraint firstItem="glG-hM-7tV" firstAttribute="leading" secondItem="pdE-98-Uwy" secondAttribute="trailing" constant="16" id="S3q-n1-xI8"/>
+                    <constraint firstItem="ac0-s1-iNE" firstAttribute="centerY" secondItem="AYm-Wk-iUg" secondAttribute="centerY" id="Ta4-Mz-6QA"/>
+                    <constraint firstItem="pdE-98-Uwy" firstAttribute="centerY" secondItem="AYm-Wk-iUg" secondAttribute="centerY" id="ZsX-6Z-7E8"/>
+                    <constraint firstAttribute="trailing" secondItem="ac0-s1-iNE" secondAttribute="trailing" constant="16" id="j4U-cQ-xcv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="pdE-98-Uwy" id="ARU-63-xBD"/>
+                <outlet property="titleLabel" destination="glG-hM-7tV" id="9v5-Iq-gSS"/>
+            </connections>
+            <point key="canvasLocation" x="-96.799999999999997" y="76.46176911544228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellRight" width="8" height="14"/>
+        <image name="settings_icon_type_manage" width="24" height="24"/>
+    </resources>
+</document>

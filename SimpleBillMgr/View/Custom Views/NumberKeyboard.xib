@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DFR-9O-xu1" customClass="NumberKeyboard" customModule="SimpleBillMgr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-lG-6Q2">
+                    <rect key="frame" x="0.0" y="20" width="375" height="264"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0X-Ov-dI0">
+                            <rect key="frame" x="294" y="1" width="80" height="130.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWE-QC-bdm">
+                                    <rect key="frame" x="11" y="2" width="58" height="58"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="UcC-1B-TbJ"/>
+                                        <constraint firstAttribute="width" constant="58" id="dzo-O9-fjO"/>
+                                    </constraints>
+                                    <state key="normal" image="KeyboardIconBackspace"/>
+                                    <connections>
+                                        <action selector="onBackspace:" destination="DFR-9O-xu1" eventType="touchUpInside" id="IE6-X0-JQh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4E-HO-gPF">
+                                    <rect key="frame" x="11" y="70.5" width="58" height="58"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="58" id="8jo-In-6Bg"/>
+                                        <constraint firstAttribute="height" constant="58" id="Wfp-uC-euu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="17"/>
+                                    <state key="normal" title="X">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClear:" destination="DFR-9O-xu1" eventType="touchUpInside" id="F9l-EB-wsP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="m4E-HO-gPF" secondAttribute="bottom" constant="2" id="J1d-pc-IS0"/>
+                                <constraint firstItem="kWE-QC-bdm" firstAttribute="top" secondItem="k0X-Ov-dI0" secondAttribute="top" constant="2" id="KOb-8p-hm0"/>
+                                <constraint firstItem="kWE-QC-bdm" firstAttribute="centerX" secondItem="k0X-Ov-dI0" secondAttribute="centerX" id="WDj-22-dtI"/>
+                                <constraint firstItem="m4E-HO-gPF" firstAttribute="centerX" secondItem="k0X-Ov-dI0" secondAttribute="centerX" id="drm-rU-j0d"/>
+                                <constraint firstAttribute="width" constant="80" id="lT9-B6-IKP"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BD-vr-0G6">
+                            <rect key="frame" x="294" y="132.5" width="80" height="130.5"/>
+                            <color key="backgroundColor" red="0.29121277363685205" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="r5N-zR-Axt"/>
+                            </constraints>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onDone:" destination="DFR-9O-xu1" eventType="touchUpInside" id="F6U-aE-NPr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgm-9I-3UM">
+                            <rect key="frame" x="1" y="1" width="96.5" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="Nj3-J2-xzU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwm-Oq-hfu">
+                            <rect key="frame" x="98.5" y="1" width="97" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="Lse-00-bud"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5M-R1-O1d">
+                            <rect key="frame" x="196.5" y="1" width="96.5" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="wvo-XW-6Ay"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-BD-QkQ">
+                            <rect key="frame" x="1" y="67" width="96.5" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="yWd-Am-BLV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-f3-ZCi">
+                            <rect key="frame" x="98.5" y="67" width="97" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="aZp-f4-uLt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukG-CJ-ZE5">
+                            <rect key="frame" x="196.5" y="67" width="96.5" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="6">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="Im1-YC-DGP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7o-ay-Zyg">
+                            <rect key="frame" x="1" y="132.5" width="96.5" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="1UY-NN-ZhH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1As-8a-mrG">
+                            <rect key="frame" x="98.5" y="132.5" width="97" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="JSy-Sm-sVC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5O-c6-WZa">
+                            <rect key="frame" x="196.5" y="132.5" width="96.5" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="hoc-eY-riQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXf-F1-otX">
+                            <rect key="frame" x="1" y="198.5" width="96.5" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="SxI-aP-XEG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-FS-T03">
+                            <rect key="frame" x="98.5" y="198.5" width="96.5" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="Yu7-a0-NRn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05D-Ce-Kne">
+                            <rect key="frame" x="196" y="198.5" width="96.5" height="64.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title=".">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onKey:" destination="DFR-9O-xu1" eventType="touchUpInside" id="dRn-Xa-HsF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94782748287671237" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bCI-FS-T03" firstAttribute="leading" secondItem="ZXf-F1-otX" secondAttribute="trailing" constant="1" id="0Bo-72-iyK"/>
+                        <constraint firstItem="kwm-Oq-hfu" firstAttribute="height" secondItem="g5U-f3-ZCi" secondAttribute="height" id="0fk-Sn-7cP"/>
+                        <constraint firstItem="x5O-c6-WZa" firstAttribute="top" secondItem="ukG-CJ-ZE5" secondAttribute="bottom" constant="1" id="1dg-SN-JBv"/>
+                        <constraint firstItem="g5U-f3-ZCi" firstAttribute="width" secondItem="ukG-CJ-ZE5" secondAttribute="width" id="1mQ-HK-MGT"/>
+                        <constraint firstItem="8BD-vr-0G6" firstAttribute="top" secondItem="k0X-Ov-dI0" secondAttribute="bottom" constant="1" id="2ZE-F6-IU9"/>
+                        <constraint firstItem="Wgm-9I-3UM" firstAttribute="width" secondItem="kwm-Oq-hfu" secondAttribute="width" id="2zm-bl-MMm"/>
+                        <constraint firstItem="1As-8a-mrG" firstAttribute="leading" secondItem="K7o-ay-Zyg" secondAttribute="trailing" constant="1" id="3dt-NS-XJS"/>
+                        <constraint firstItem="g5U-f3-ZCi" firstAttribute="leading" secondItem="ZcL-BD-QkQ" secondAttribute="trailing" constant="1" id="4yk-CB-OMi"/>
+                        <constraint firstAttribute="bottom" secondItem="8BD-vr-0G6" secondAttribute="bottom" constant="1" id="5FS-xF-dPS"/>
+                        <constraint firstItem="1As-8a-mrG" firstAttribute="top" secondItem="g5U-f3-ZCi" secondAttribute="bottom" constant="1" id="8UN-rH-add"/>
+                        <constraint firstItem="05D-Ce-Kne" firstAttribute="top" secondItem="x5O-c6-WZa" secondAttribute="bottom" constant="1" id="CMc-jz-5eL"/>
+                        <constraint firstItem="J5M-R1-O1d" firstAttribute="leading" secondItem="kwm-Oq-hfu" secondAttribute="trailing" constant="1" id="Dvj-tO-X7o"/>
+                        <constraint firstItem="1As-8a-mrG" firstAttribute="height" secondItem="bCI-FS-T03" secondAttribute="height" id="EMX-6t-gHu"/>
+                        <constraint firstItem="k0X-Ov-dI0" firstAttribute="leading" secondItem="J5M-R1-O1d" secondAttribute="trailing" constant="1" id="Fb6-D1-hoB"/>
+                        <constraint firstItem="Wgm-9I-3UM" firstAttribute="leading" secondItem="LHT-lG-6Q2" secondAttribute="leading" constant="1" id="GDE-C2-Co5"/>
+                        <constraint firstItem="Wgm-9I-3UM" firstAttribute="height" secondItem="ZcL-BD-QkQ" secondAttribute="height" id="H2b-RS-qkW"/>
+                        <constraint firstItem="g5U-f3-ZCi" firstAttribute="height" secondItem="1As-8a-mrG" secondAttribute="height" id="I8T-rQ-ZtN"/>
+                        <constraint firstItem="J5M-R1-O1d" firstAttribute="height" secondItem="ukG-CJ-ZE5" secondAttribute="height" id="IM5-If-Xri"/>
+                        <constraint firstItem="K7o-ay-Zyg" firstAttribute="top" secondItem="ZcL-BD-QkQ" secondAttribute="bottom" constant="1" id="ItA-hE-U6M"/>
+                        <constraint firstItem="ukG-CJ-ZE5" firstAttribute="leading" secondItem="g5U-f3-ZCi" secondAttribute="trailing" constant="1" id="KKp-eh-vx2"/>
+                        <constraint firstAttribute="bottom" secondItem="bCI-FS-T03" secondAttribute="bottom" constant="1" id="Kq5-qx-Hos"/>
+                        <constraint firstItem="k0X-Ov-dI0" firstAttribute="leading" secondItem="x5O-c6-WZa" secondAttribute="trailing" constant="1" id="Loq-hB-WDX"/>
+                        <constraint firstItem="ZcL-BD-QkQ" firstAttribute="leading" secondItem="LHT-lG-6Q2" secondAttribute="leading" constant="1" id="M1t-Z1-Lht"/>
+                        <constraint firstItem="ZcL-BD-QkQ" firstAttribute="width" secondItem="g5U-f3-ZCi" secondAttribute="width" id="Pri-OE-VO6"/>
+                        <constraint firstItem="ZXf-F1-otX" firstAttribute="top" secondItem="K7o-ay-Zyg" secondAttribute="bottom" constant="1" id="QLj-OC-V9F"/>
+                        <constraint firstItem="ZcL-BD-QkQ" firstAttribute="height" secondItem="K7o-ay-Zyg" secondAttribute="height" id="QOY-pv-oOt"/>
+                        <constraint firstItem="ukG-CJ-ZE5" firstAttribute="height" secondItem="x5O-c6-WZa" secondAttribute="height" id="QgG-RW-xx5"/>
+                        <constraint firstItem="ZXf-F1-otX" firstAttribute="width" secondItem="bCI-FS-T03" secondAttribute="width" id="RCg-U9-cyp"/>
+                        <constraint firstItem="ukG-CJ-ZE5" firstAttribute="top" secondItem="J5M-R1-O1d" secondAttribute="bottom" constant="1" id="TKh-OH-ScQ"/>
+                        <constraint firstItem="kwm-Oq-hfu" firstAttribute="leading" secondItem="Wgm-9I-3UM" secondAttribute="trailing" constant="1" id="UTn-xK-GFk"/>
+                        <constraint firstAttribute="height" constant="264" id="V1u-3p-za1"/>
+                        <constraint firstItem="ZXf-F1-otX" firstAttribute="leading" secondItem="LHT-lG-6Q2" secondAttribute="leading" constant="1" id="WDp-Ek-REv"/>
+                        <constraint firstItem="g5U-f3-ZCi" firstAttribute="top" secondItem="kwm-Oq-hfu" secondAttribute="bottom" constant="1" id="XVP-yD-v9i"/>
+                        <constraint firstItem="05D-Ce-Kne" firstAttribute="leading" secondItem="bCI-FS-T03" secondAttribute="trailing" constant="1" id="YMX-wA-OYt"/>
+                        <constraint firstItem="x5O-c6-WZa" firstAttribute="leading" secondItem="1As-8a-mrG" secondAttribute="trailing" constant="1" id="cDf-R9-jau"/>
+                        <constraint firstItem="bCI-FS-T03" firstAttribute="top" secondItem="1As-8a-mrG" secondAttribute="bottom" constant="1" id="cnY-An-NIi"/>
+                        <constraint firstItem="bCI-FS-T03" firstAttribute="width" secondItem="05D-Ce-Kne" secondAttribute="width" id="dFC-H0-zES"/>
+                        <constraint firstItem="Wgm-9I-3UM" firstAttribute="top" secondItem="LHT-lG-6Q2" secondAttribute="top" constant="1" id="dld-Mi-y6w"/>
+                        <constraint firstItem="kwm-Oq-hfu" firstAttribute="width" secondItem="J5M-R1-O1d" secondAttribute="width" id="eI8-PG-LDX"/>
+                        <constraint firstItem="ZcL-BD-QkQ" firstAttribute="top" secondItem="Wgm-9I-3UM" secondAttribute="bottom" constant="1" id="eJ8-ro-aNx"/>
+                        <constraint firstItem="K7o-ay-Zyg" firstAttribute="leading" secondItem="LHT-lG-6Q2" secondAttribute="leading" constant="1" id="eMu-Vb-sPk"/>
+                        <constraint firstAttribute="trailing" secondItem="8BD-vr-0G6" secondAttribute="trailing" constant="1" id="eZT-iF-kM0"/>
+                        <constraint firstItem="K7o-ay-Zyg" firstAttribute="height" secondItem="ZXf-F1-otX" secondAttribute="height" id="fgy-eq-wiQ"/>
+                        <constraint firstAttribute="trailing" secondItem="k0X-Ov-dI0" secondAttribute="trailing" constant="1" id="glc-GT-Jzk"/>
+                        <constraint firstAttribute="bottom" secondItem="ZXf-F1-otX" secondAttribute="bottom" constant="1" id="gzk-jv-E91"/>
+                        <constraint firstAttribute="bottom" secondItem="05D-Ce-Kne" secondAttribute="bottom" constant="1" id="imc-9t-Fmd"/>
+                        <constraint firstItem="K7o-ay-Zyg" firstAttribute="width" secondItem="1As-8a-mrG" secondAttribute="width" id="mF7-s5-x2J"/>
+                        <constraint firstItem="05D-Ce-Kne" firstAttribute="height" secondItem="x5O-c6-WZa" secondAttribute="height" id="p5d-qb-XOu"/>
+                        <constraint firstItem="8BD-vr-0G6" firstAttribute="height" secondItem="k0X-Ov-dI0" secondAttribute="height" id="p7Y-0M-saE"/>
+                        <constraint firstItem="k0X-Ov-dI0" firstAttribute="leading" secondItem="ukG-CJ-ZE5" secondAttribute="trailing" constant="1" id="pd5-sO-93M"/>
+                        <constraint firstItem="J5M-R1-O1d" firstAttribute="top" secondItem="LHT-lG-6Q2" secondAttribute="top" constant="1" id="pdz-c9-jJv"/>
+                        <constraint firstItem="k0X-Ov-dI0" firstAttribute="leading" secondItem="05D-Ce-Kne" secondAttribute="trailing" constant="1.5" id="v2D-J5-voz"/>
+                        <constraint firstItem="1As-8a-mrG" firstAttribute="width" secondItem="x5O-c6-WZa" secondAttribute="width" id="vvs-G2-OQK"/>
+                        <constraint firstItem="k0X-Ov-dI0" firstAttribute="top" secondItem="LHT-lG-6Q2" secondAttribute="top" constant="1" id="wEo-3O-UIb"/>
+                        <constraint firstItem="kwm-Oq-hfu" firstAttribute="top" secondItem="LHT-lG-6Q2" secondAttribute="top" constant="1" id="wZl-lQ-nng"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LHT-lG-6Q2" firstAttribute="top" secondItem="zzH-Le-hSN" secondAttribute="top" id="UQd-av-ISg"/>
+                <constraint firstItem="zzH-Le-hSN" firstAttribute="trailing" secondItem="LHT-lG-6Q2" secondAttribute="trailing" id="hGe-JS-LbE"/>
+                <constraint firstItem="LHT-lG-6Q2" firstAttribute="leading" secondItem="zzH-Le-hSN" secondAttribute="leading" id="sr5-cT-bMz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zzH-Le-hSN"/>
+            <connections>
+                <outlet property="backspaceButton" destination="kWE-QC-bdm" id="XRh-D5-FFP"/>
+                <outlet property="clearButton" destination="m4E-HO-gPF" id="mp5-Ek-MEq"/>
+                <outlet property="pad" destination="LHT-lG-6Q2" id="RdZ-37-gcp"/>
+                <outlet property="splitView" destination="k0X-Ov-dI0" id="PvS-u0-iQ8"/>
+            </connections>
+            <point key="canvasLocation" x="-116" y="-216.34182908545728"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="KeyboardIconBackspace" width="27" height="27"/>
+    </resources>
+</document>

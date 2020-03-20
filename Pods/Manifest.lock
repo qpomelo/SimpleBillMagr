@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.0.2)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - EFColorPicker (5.2.0)
+  - IQKeyboardManager (6.5.5)
+  - SnapKit (5.0.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - SwiftDate (6.1.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - EFColorPicker
+  - IQKeyboardManager
+  - SnapKit
+  - SQLite.swift (~> 0.12.0)
+  - SwiftDate
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - EFColorPicker
+    - IQKeyboardManager
+    - SnapKit
+    - SQLite.swift
+    - SwiftDate
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  EFColorPicker: ac692380016b47ad0e61706a910fc1414214a760
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 91cadf8c8df363d33565184bbdf29e9ecc372f43
+
+COCOAPODS: 1.8.4

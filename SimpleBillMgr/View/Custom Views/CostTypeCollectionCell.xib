@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pJT-tc-ot9" customClass="CostTypeCollectionCell" customModule="SimpleBillMgr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="102" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EU-bD-kC6">
+                        <rect key="frame" x="28" y="38" width="46" height="46"/>
+                        <color key="backgroundColor" name="KeyboardDoneButtonBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="cbA-8e-Rmu"/>
+                            <constraint firstAttribute="width" constant="46" id="exr-IJ-nhi"/>
+                        </constraints>
+                        <state key="normal" image="BillTypeMetro">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="23"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="rect" keyPath="imageEdgeInsets">
+                                <rect key="value" x="11" y="11" width="11" height="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交通" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-AS-Wtm">
+                        <rect key="frame" x="2" y="92" width="98" height="15.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                        <color key="textColor" name="TabText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YG-2Q-e11">
+                        <rect key="frame" x="0.0" y="0.0" width="102" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="MRi-AS-Wtm" firstAttribute="top" secondItem="0EU-bD-kC6" secondAttribute="bottom" constant="8" id="0am-89-QAn"/>
+                <constraint firstItem="0EU-bD-kC6" firstAttribute="centerX" secondItem="pJT-tc-ot9" secondAttribute="centerX" id="B8J-0d-JP7"/>
+                <constraint firstItem="MRi-AS-Wtm" firstAttribute="leading" secondItem="dX3-yg-uU1" secondAttribute="leading" constant="2" id="Exn-ON-Xll"/>
+                <constraint firstAttribute="trailing" secondItem="0YG-2Q-e11" secondAttribute="trailing" id="L1G-cr-w00"/>
+                <constraint firstItem="dX3-yg-uU1" firstAttribute="trailing" secondItem="MRi-AS-Wtm" secondAttribute="trailing" constant="2" id="O9r-zX-et5"/>
+                <constraint firstAttribute="bottom" secondItem="0YG-2Q-e11" secondAttribute="bottom" id="PFr-uU-nDN"/>
+                <constraint firstItem="0YG-2Q-e11" firstAttribute="leading" secondItem="pJT-tc-ot9" secondAttribute="leading" id="S9R-z0-Mqf"/>
+                <constraint firstItem="0EU-bD-kC6" firstAttribute="centerY" secondItem="pJT-tc-ot9" secondAttribute="centerY" constant="-14" id="XVC-23-9S1"/>
+                <constraint firstItem="0YG-2Q-e11" firstAttribute="top" secondItem="pJT-tc-ot9" secondAttribute="top" id="hJP-Ud-57H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dX3-yg-uU1"/>
+            <size key="customSize" width="102" height="150"/>
+            <connections>
+                <outlet property="btn" destination="0EU-bD-kC6" id="V76-P5-rZB"/>
+                <outlet property="label" destination="MRi-AS-Wtm" id="JZZ-1i-EOw"/>
+            </connections>
+            <point key="canvasLocation" x="35.200000000000003" y="89.055472263868069"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BillTypeMetro" width="80" height="85"/>
+        <namedColor name="KeyboardDoneButtonBackground">
+            <color red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabText">
+            <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
